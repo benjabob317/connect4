@@ -97,7 +97,7 @@ while win == False:
                     board[column][x] = player
                     chips = 0
                     last_move = [column, x, player]
-                    replit.clear()
+                    print('\033[2J')
                     print_board(board)
                     if determine_win(board, last_move) != False:
                         if player == 'r':
